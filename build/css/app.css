@@ -473,6 +473,10 @@ img {
   }
 }
 
+.navegacion__enlace--footer {
+  color: #fff;
+}
+
 .nucleus {
   margin-top: 3rem;
 }
@@ -648,4 +652,26 @@ img {
   text-align: right;
   font-weight: 700;
   color: #6834a6;
+}
+
+.footer {
+  background-color: #5a30a0;
+  padding: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  width: 20rem;
+  margin: 0 auto 4rem auto;
+}
+@media (min-width: 768px) {
+  .footer__logo {
+    margin: 0;
+  }
 }

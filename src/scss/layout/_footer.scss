@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    background-color: #5a30a0;
+    padding: 3rem;
+}
+.footer__grid {
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+    @include m.tablet {
+        margin: 0;
+    }
+}
