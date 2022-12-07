@@ -22,6 +22,16 @@
         @content;
     }
 }
+@mixin  desktopXXL {
+    @media (min-width: v.$desktopXXL) {
+        @content;
+    }
+}
+@mixin  desktopXXXL {
+    @media (min-width: v.$desktopXXXL) {
+        @content;
+    }
+}
 
 @mixin grid($columnas, $espaciado) {
     display: grid;
