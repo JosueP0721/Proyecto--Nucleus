@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seguridad {
+    background-color: v.$c-primario;
+    padding: 20rem 0;
+    position: relative;
+    margin: 10rem 0;
+    overflow: hidden;
+    &::before,
+    &::after {
+        background-color: v.$blanco;
+        content: '';
+        height: 20rem;
+        width: 110%;
+        position: absolute;
+    }
+    &::before {
+        top: -10rem;
+        left: 0;
+        transform: rotate(3deg);
+    }
+    &::after {
+        bottom: -10rem;
+        right: 0;
+        transform: rotate(3deg);
+    }
+}
+.seguridad__heading {
+    color: v.$blanco;  
+}
+.seguridad__grid {
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
