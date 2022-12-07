@@ -23,11 +23,6 @@
         background-size: 150rem;
     }
 }
-.header__contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
-}
 .header__barra {
     @include m.tablet {
         display: flex;

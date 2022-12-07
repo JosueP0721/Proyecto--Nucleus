@@ -33,7 +33,7 @@ img {
     max-width: 100%;
     display: block;
 }
-.contenedor {
+[class$="__contenedor"] {
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
